@@ -8,6 +8,9 @@ on:
       - 'preprocessing/automate_SATRIA-DWI-CAHYA.py'
   workflow_dispatch:  # Memungkinkan trigger manual dari tab Actions
 
+permissions:
+  contents: write  # Izin untuk push hasil preprocessing ke repository
+
 jobs:
   preprocessing:
     runs-on: ubuntu-latest
